@@ -8,7 +8,7 @@ export default function Sidebar() {
                 <span className="sidebar__item-title">
                     about me
                 </span>
-                <img src="https://media.bongda.com.vn/resize/500x300/files/hai.phan/2021/06/25/0_gettyimages-1231262866-2145.jpg" alt=""/>
+                <img src="https://s.yimg.com/fz/api/res/1.2/GtjgeMpMNywGknC7_3VFNw--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0yMjA7cT04MDt3PTE2NQ--/https://s.yimg.com/zb/imgv1/e6eaa121-39e5-322e-b9f7-9dc65475a2d0/t_1024x1024" alt=""/>
                 <p>gian gần đây, Man United đã trở lại và có những động thái đàm phán với Dortmund. Nhiều nguồn tin tiết lộ, Man United sẵn sàng chấp nhận mức phí chuyển nhượng 90 triệu euro do Dortmund yêu cầu.</p>
             </div>
             <div className="sidebar__item"> 

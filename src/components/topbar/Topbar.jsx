@@ -18,8 +18,8 @@ export default function Topbar() {
                 </ul>
             </div>
             <div className="topbar__login">
-                <img src="https://anhdepblog.com/wp-content/uploads/2018/01/top-hinh-nen-bong-da-dep-23.jpg" alt="avatar" className="topbar__login-img"/> 
                 <i className="topbar__login-search fas fa-search"></i>
+                <img src="https://anhdepblog.com/wp-content/uploads/2018/01/top-hinh-nen-bong-da-dep-23.jpg" alt="avatar" className="topbar__login-img"/> 
             </div>
         </div>
     )

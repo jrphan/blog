@@ -1,3 +1,9 @@
+@import "../../mixins/mixins.scss";
+
 .home {
     display: flex;
+    
+    @include xs {
+        flex-direction: column-reverse;
+    }
 }

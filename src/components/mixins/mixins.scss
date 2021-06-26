@@ -1,0 +1,17 @@
+$xs-min: 768px; // KHÔNG THAY ĐỔI
+$sm-min: 992px; // KHÔNG THAY ĐỔI
+
+$xs-max: ($xs-min - 1); // Mobile
+$sm-max: ($sm-min - 1); // Tablet
+
+@mixin sm {
+	@media screen and (max-width: $sm-max) {
+		@content;
+	}
+}
+// mobile
+@mixin xs {
+	@media screen and (max-width: $xs-max) {
+		@content;
+	}
+}

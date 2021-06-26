@@ -5,7 +5,7 @@ export default function Post() {
     return (
         <div className="post">
             <div className="post__img">
-                <img src="https://media.bongda.com.vn/files/nam.tan/2021/06/26/e4kgn9jwyasnflb-0902.jpg" alt=""/>
+                <img src="https://media.bongda.com.vn/resize/475x300/files/news/2021/06/26/5-ngoi-sao-vut-sang-o-euro-2020-101017.png" alt=""/>
             </div>
             <div className="post__info">
                 <div className="post__info-cats">

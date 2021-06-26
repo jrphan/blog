@@ -1,3 +1,5 @@
+@import "../mixins/mixins.scss";
+
 .topbar {
     font-family: 'Josefin Sans', sans-serif;
 
@@ -9,7 +11,7 @@
     -webkit-box-shadow: -1px 7px 31px 0px rgba(0,0,0,0.21);
     -moz-box-shadow: -1px 7px 31px 0px rgba(0,0,0,0.21);
     
-    position: sticky;
+    position: fixed;
     top: 0;
 
     display: flex;
@@ -22,6 +24,25 @@
         align-items: center;
         justify-content: center;
 
+        @include xs {
+            display: none;
+        }
+        .fa-facebook {
+            &:hover {
+                color: rgb(31, 33, 168);
+            }
+        }
+        .fa-instagram {
+            &:hover {
+                color: rgb(180, 27, 21);
+            }
+        }
+
+        .fa-github {
+            &:hover {
+                color: #000;
+            }
+        }
         &-item {
             font-size: 20px;
             margin-right: 20px;
@@ -29,14 +50,15 @@
             cursor: pointer;
             color: #444;
 
-            &:hover {
-                color: #000;
-            }
         }
     }
     
     &__menu {
         flex: 6;
+
+        @include xs {
+            display: none;
+        }
 
         &-list {
             display: flex;
@@ -80,6 +102,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @include xs {
+            justify-content: flex-end;
+        }
 
         &-img {
             width: 40px;
