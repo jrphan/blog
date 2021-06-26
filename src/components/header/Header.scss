@@ -1,0 +1,39 @@
+.header {
+    margin-top: 40px;
+
+    &__titles {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        font-family: 'Lora', serif;
+
+        color: #444;
+
+        &-sm {
+            position: absolute;
+            top: 18%;
+
+            font-size: 20px;
+
+            color: #444;
+        }
+
+        &-lg {
+            position: absolute;
+            top: 20%;
+            
+            font-size: 100px;
+
+            color: #444;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        height: 75vh;
+        margin-top: 100px;
+        object-fit: cover;
+    }
+}

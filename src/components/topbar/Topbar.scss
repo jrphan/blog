@@ -1,0 +1,104 @@
+.topbar {
+    font-family: 'Josefin Sans', sans-serif;
+
+    width: 100%;
+    height: 50px;
+
+    background-color: #fff;
+    box-shadow: -1px 7px 31px 0px rgba(0,0,0,0.21);
+    -webkit-box-shadow: -1px 7px 31px 0px rgba(0,0,0,0.21);
+    -moz-box-shadow: -1px 7px 31px 0px rgba(0,0,0,0.21);
+    
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    z-index: 999;
+
+    &__icon {
+        flex: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-item {
+            font-size: 20px;
+            margin-right: 20px;
+
+            cursor: pointer;
+            color: #444;
+
+            &:hover {
+                color: #000;
+            }
+        }
+    }
+    
+    &__menu {
+        flex: 6;
+
+        &-list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .item {
+                list-style: none;
+                text-transform: uppercase;
+
+                padding: 0 20px;
+                cursor: pointer;
+
+                color: #444;
+                transition: all 0.1s ease;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    height: 2px;
+                    width: 100%;
+                    background-color: #444;
+                    transform: scale(0);
+                    transition: all 0.3s ease;
+                }
+                
+                &:hover {
+                    color: #000;
+                    
+                    &::after {
+                        transform: scale(1);
+                        transition: all 0.3s ease;
+                    }
+                }
+            }
+        }
+    }
+
+    &__login {
+        flex: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-img {
+            width: 40px;
+            height: 40px;
+            
+            border-radius: 50%;
+            object-fit: cover;
+            
+            cursor: pointer;
+        }
+
+        &-search {
+            font-size: 20px;
+
+            cursor: pointer;
+            color: #444;
+
+            padding: 0 15px;
+
+        }
+    }
+}
