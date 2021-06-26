@@ -11,9 +11,9 @@ export default function Topbar() {
             <div className="topbar__menu">
                 <ul className="topbar__menu-list">
                     <li className='item'>home</li>
+                    <li className='item'>write</li>
                     <li className='item'>about</li>
                     <li className='item'>contact</li>
-                    <li className='item'>write</li>
                     <li className='item'>logout</li>
                 </ul>
             </div>

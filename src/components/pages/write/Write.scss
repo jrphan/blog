@@ -1,0 +1,93 @@
+.write {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__img {
+        margin-bottom: 10px;
+        width: 70vw;
+        height: 400px;
+
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    .writeform {
+        position: relative;
+        &__group {
+            // margin-left: 100px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .icon {
+                width: 25px;
+                height: 25px;
+
+                border-radius: 50%;
+                border: 1px solid;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                color: #000;
+                background-color: #fff;
+
+                transition: all 0.4s ease;
+                cursor: pointer;
+
+                &:hover {
+                    color: #fff;
+                    background-color: #000;
+                    transition: all 0.4s ease;
+                }
+            }
+
+            .writeinput {
+                font-size: 30px;
+                font-family: "Varela Round", sans-serif;
+
+                border: none;
+    
+                width: 70vw;
+                padding: 20px;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            .writetext {
+                resize: none;
+                font-size: 20px;
+                line-height: 35px;
+                height: 80vh;
+            }
+        }
+        .writesubmit {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            
+            color: #fff;
+            background-color: teal;
+
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+
+            text-transform: capitalize;
+
+            cursor: pointer;
+            transition: all 0.4s ease;
+
+            &:hover {
+                background-color: rgb(5, 82, 82);
+                transition: all 0.4s ease;
+            }
+        }
+    }
+}

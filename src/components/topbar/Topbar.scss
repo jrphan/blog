@@ -11,12 +11,17 @@
     -webkit-box-shadow: -1px 7px 31px 0px rgba(0,0,0,0.21);
     -moz-box-shadow: -1px 7px 31px 0px rgba(0,0,0,0.21);
     
-    position: fixed;
+    position: sticky;
     top: 0;
 
     display: flex;
     align-items: center;
     z-index: 999;
+
+    @include xs {
+        position: fixed;
+        justify-content: space-between;
+    }
 
     &__icon {
         flex: 3;
@@ -24,9 +29,9 @@
         align-items: center;
         justify-content: center;
 
-        @include xs {
-            display: none;
-        }
+        // @include xs {
+        //     display: none;
+        // }
         .fa-facebook {
             &:hover {
                 color: rgb(31, 33, 168);
@@ -103,9 +108,9 @@
         align-items: center;
         justify-content: center;
 
-        @include xs {
-            justify-content: flex-end;
-        }
+        // @include xs {
+        //     justify-content: flex-end;
+        // }
 
         &-img {
             width: 40px;

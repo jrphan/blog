@@ -1,6 +1,4 @@
 .header {
-    margin-top: 40px;
-
     &__titles {
         display: flex;
         flex-direction: column;
@@ -13,7 +11,7 @@
 
         &-sm {
             position: absolute;
-            top: 23%;
+            top: 28%;
             right: 20%;
 
             font-size: 20px;
@@ -24,7 +22,7 @@
 
         &-lg {
             position: absolute;
-            top: 28%;
+            top: 33%;
             right: 17%;
             
             font-size: 100px;

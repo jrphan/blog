@@ -8,7 +8,7 @@ export default function Scroll() {
 
     useEffect(() => {
         const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        setScrolled(((y /height) * 100));
+        setScrolled((y /height) * 100);
     }, [y]);
 
     return (
