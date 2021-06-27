@@ -1,0 +1,107 @@
+.setting {
+    display: flex;
+
+    .settingwrapper {
+        flex: 9;
+
+        padding: 20px;
+
+        &__titles {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &-update {
+                font-size: 30px;
+                font-family: "Lora", sans-serif;
+
+                margin-bottom: 20px;
+
+                color: lightcoral;
+            }
+
+            &-delete {
+                font-size: 14px;
+                font-family: "Lora", sans-serif;
+
+                color: red;
+
+                cursor: pointer;
+            }
+        }
+
+        &__form {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                font-family: "Varela Round", sans-serif;
+                font-size: 20px;
+
+                margin-top: 15px;
+
+                .icon {
+                    background-color: lightcoral;
+                    color: #fff;
+                    
+                    height: 30px;
+                    width: 30px;
+                    margin: 10px 0;
+                    
+                    cursor: pointer;
+                    border-radius: 50%;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+            img {
+                margin-top: 20px;
+                width: 100px;
+                height: 100px;
+
+                border-radius: 30%;
+                object-fit: cover;
+            }
+
+            input {
+                color: gray;
+                
+                margin: 10px 0;
+                
+                font-size: 15px;
+                font-family: "Varela Round", sans-serif;
+                
+                height: 30px;
+                width: 100%;
+
+                border: none;
+                border-bottom: 1px solid gray;
+                outline: none;
+            }
+
+            .submit {
+                width: 150px;
+                padding: 10px 20px;
+                margin-top: 20px;
+                
+                align-self: center;
+                cursor: pointer;
+                transition: all 0.4s ease;
+
+                border: none;
+                border-radius: 10px;
+
+                color: #fff;
+                background-color: teal;
+
+                &:hover {
+                    background-color: rgb(3, 77, 77);
+                    transition: all 0.4s ease;
+                }
+            }
+        }
+    }
+}
